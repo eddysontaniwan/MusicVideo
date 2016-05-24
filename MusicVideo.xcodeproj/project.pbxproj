@@ -133,8 +133,8 @@
 		2376BC571CEC656600A98A33 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2376BC5B1CEC6A8700A98A33 /* APIManager.swift */,
 				2376BC601CEC841100A98A33 /* MusicVideo.swift */,
+				2376BC5B1CEC6A8700A98A33 /* APIManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -534,6 +534,7 @@
 				2376BC501CEC5D9000A98A33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2376BC511CEC5D9000A98A33 /* Build configuration list for PBXNativeTarget "MusicVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +543,7 @@
 				2376BC531CEC5D9000A98A33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2376BC541CEC5D9000A98A33 /* Build configuration list for PBXNativeTarget "MusicVideoUITests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +552,7 @@
 				2376BC561CEC5D9000A98A33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

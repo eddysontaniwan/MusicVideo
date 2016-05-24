@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var videos = [Videos]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,17 +22,38 @@ class ViewController: UIViewController {
         
     }
 
-    func didLoadData(result:String){
+    func didLoadData(videos: [Videos]){
         
-        let alert = UIAlertController(title: "Notification", message: (result), preferredStyle: .Alert)
+//        let alert = UIAlertController(title: "Notification", message: (result), preferredStyle: .Alert)
+//        
+//        let okAction = UIAlertAction(title: "OK", style: .Default) {
+//            action -> Void in
+//            // do something if u want
+//        }
+//        
+//        alert.addAction(okAction)
+//        self.presentViewController(alert, animated: true, completion: nil)
         
-        let okAction = UIAlertAction(title: "OK", style: .Default) {
-            action -> Void in
-            // do something if u want
+        self.videos = videos
+        
+        for item in videos{
+            print("name = \(item.vName)")
         }
         
-        alert.addAction(okAction)
-        self.presentViewController(alert, animated: true, completion: nil)
+        for (index, item) in videos.enumerate() {
+            print("\(index) name = \(item.vName)")
+        }
+        
+//        for i in 0..<videos.count {
+//            let video = videos[i]
+//            print("\(index) name = \(video.vName)")
+//        }
+        
+        // ==== OLD WAY
+//        for var i = 0; i < videos.count; i++ {
+//            let video = videos[i]
+//            print("\(i) name = \(video.vName)")
+//        }
     }
 }
 
