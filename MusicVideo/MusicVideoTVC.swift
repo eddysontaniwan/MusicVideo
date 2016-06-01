@@ -61,7 +61,7 @@ class MusicVideoTVC: UITableViewController {
 //        case WWAN: view.backgroundColor = UIColor.yellowColor()
 //        displayLabel.text = "Reachable with Cellular"
         default:
-            view.backgroundColor = UIColor.greenColor()
+//            view.backgroundColor = UIColor.greenColor()
             if videos.count > 1 {
                 print("do not refresh API")
             } else {
@@ -73,7 +73,7 @@ class MusicVideoTVC: UITableViewController {
     func runAPI() {
         //Call API
         let api = APIManager()
-        api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=50/json", completion: didLoadData)
+        api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=200/json", completion: didLoadData)
     }
     
     // Is called just as the object is about to be deallocated
@@ -133,13 +133,14 @@ class MusicVideoTVC: UITableViewController {
     }
 
     
+    private struct storyboard {
+        static let cellReuseIdentifier = "cell"
+    }
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier(storyboard.cellReuseIdentifier, forIndexPath: indexPath) as! MusicVideoTableViewCell
 
-        let video = videos[indexPath.row]
-        
-        cell.textLabel?.text = "\(indexPath.row + 1)"
-        cell.detailTextLabel?.text = video.vName
+        cell.video = videos[indexPath.row]
 
         return cell
     }
