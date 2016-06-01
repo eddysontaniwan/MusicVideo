@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2306C0451CFED4E600834E7E /* MusicVideoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2306C0441CFED4E600834E7E /* MusicVideoDetailVC.swift */; };
 		236D270D1CF42F1E005700F3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 236D270C1CF42F1E005700F3 /* Reachability.m */; };
 		2376BC2A1CEC5D9000A98A33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2376BC291CEC5D9000A98A33 /* AppDelegate.swift */; };
 		2376BC2C1CEC5D9000A98A33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2376BC2B1CEC5D9000A98A33 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2306C0441CFED4E600834E7E /* MusicVideoDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoDetailVC.swift; sourceTree = "<group>"; };
 		236D270A1CF42F1C005700F3 /* MusicVideo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicVideo-Bridging-Header.h"; sourceTree = "<group>"; };
 		236D270B1CF42F1E005700F3 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		236D270C1CF42F1E005700F3 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				2376BC2B1CEC5D9000A98A33 /* ViewController.swift */,
 				23DA45ED1CFC260400296008 /* MusicVideoTVC.swift */,
 				23DA45EF1CFC33E500296008 /* MusicVideoTableViewCell.swift */,
+				2306C0441CFED4E600834E7E /* MusicVideoDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2306C0451CFED4E600834E7E /* MusicVideoDetailVC.swift in Sources */,
 				2376BC5C1CEC6A8700A98A33 /* APIManager.swift in Sources */,
 				2376BC2C1CEC5D9000A98A33 /* ViewController.swift in Sources */,
 				2376BC611CEC841100A98A33 /* MusicVideo.swift in Sources */,
