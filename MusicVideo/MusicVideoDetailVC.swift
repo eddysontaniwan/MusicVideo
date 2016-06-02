@@ -12,7 +12,6 @@ class MusicVideoDetailVC: UIViewController {
 
     var videos:Videos!
     
-    
     @IBOutlet weak var vName: UILabel!
     
     @IBOutlet weak var videoImage: UIImageView!
